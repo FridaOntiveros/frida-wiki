@@ -1,11 +1,43 @@
+:root{
+    /* COLORES */
+    --vino: #2c0b13;
+    --violeta: #522743;
+    --verde: #384f3d;
+    --crema: #faebd7;
+    --arena: #cfbfa0;
+}
 body{
-    background-color: antiquewhite;
+    background-color: var(--crema);
     font-family: monospace;
 }
 
 h1{
-    color:darkolivegreen
+    color:var(--verde);
 }
 th, td{
-    border: 1px solid darkolivegreen
+    border: 1px solid var(--verde);
+}
+a{
+    color: var(--violeta);
+}
+
+button{
+    background: none;
+    border: 0;
+    position: relative;
+}
+
+button:after{
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--violeta);
+
+    position: absolute;
+    top: -50%;
+    left: -10px;
+
+    opacity: 0.3;
+    z-index: -1;
 }
